@@ -1,0 +1,167 @@
+body{
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+    background: #F3F5FC ;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+
+    position: absolute;
+    width: 120px;
+    height: 48px;
+    left: 40px;
+    top: 40px;
+}
+
+.textoAqui{
+    position: absolute;
+    /*width: 577px;
+    height: 48px;*/
+    left: 240px;
+    top: 168px;
+    
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%; 
+    color: #0a3871;  
+}
+
+.rectangulo{
+    position: absolute;
+    width: 400px;
+    height: 944px;
+    left: 1000px;
+    top: 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px
+        rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+.munneco{
+    position: absolute;
+    width: 336px;
+    height: 304px;
+    left: 1032px;
+    top: 283px;
+}
+
+.msjencontrado{
+    position: absolute;
+    left: 1082px;
+    top: 619px;
+    /*width: 336px;
+    height: 58px;*/
+
+    /*font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #343a40;*/
+
+    /* inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.textoencriptar{
+    position: absolute;
+    right: 72px;
+    bottom: 283px;
+    width: 336px;
+    height: 48px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #495057;
+
+    /* inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.bottonencriptar{
+    position: absolute;
+    left: 240px;
+    bottom: 72px;
+}
+
+.bottondesencriptar{
+    position: absolute;
+    left: 592px;
+    bottom: 72px;
+}
+
+
+.admiracion{
+    position: absolute;
+    left: 240px;
+    bottom: 156px;
+}
+
+.sololetrasminisculasysinacento{
+    position: absolute;
+    left: 264px;
+    bottom: 155px;
+}
+
+.textoparacopiar{
+    position: absolute;
+    left: 1032px;
+    top: 72px;
+}
+
+.botones{
+    position: absolute;
+    left: 240px;
+    bottom: 72px;
+    margin: 0 auto;
+    
+}
+.botones li{
+    display: inline-block;
+    text-align: center;
+    border-color: #0a3871;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 24px;
+    width: 328px;
+    height: 67px;
+    background: #0a3871;
+}
+
+.botones h2{
+    width: 268px;
+    height: 19px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    padding: 24px;
+    color: white;
+
+}
+
+
+
