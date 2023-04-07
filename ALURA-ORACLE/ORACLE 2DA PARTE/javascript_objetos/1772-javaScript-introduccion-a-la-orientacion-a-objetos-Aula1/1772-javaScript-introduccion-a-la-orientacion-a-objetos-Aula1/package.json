@@ -1,0 +1,12 @@
+{
+  "name": "cuenta",
+  "version": "1.0.0",
+  "description": "programa",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "marcos lopez",
+  "license": "ISC",
+  "type": "module"
+}

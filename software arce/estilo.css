@@ -1,0 +1,89 @@
+
+.headerprincipal .container{
+    display: flex;
+    justify-content: space-between;
+    background-image: url(imagenes/istockphoto-620377910-1024x1024.jpg);
+    color: rgb(66, 19, 68);
+    
+}
+
+.fotoarce {
+    width: 10%;  
+}
+
+.fotoarce:hover{
+    opacity: 0.3;
+}
+
+body{
+    background-image: url(imagenes/naveespacial.jpg);
+}
+
+main{
+    display: flex;
+    justify-content:space-around;
+    font-family:Arial, Helvetica, sans-serif;
+    text-transform:uppercase;
+}
+
+.contenidoprincipal{
+    text-align: center;
+}
+
+ul, ol{
+    list-style:none;
+}
+
+.nav > li{
+    float:left;
+}
+
+.nav li a {
+    background-color: black;
+    color:#fff;
+    text-decoration:none;
+    padding:10px 12px;
+    display:block;
+    text-align: start;  
+    box-sizing: border-box;
+    border: 2px solid #2820be;
+    border-radius: 10px;
+    
+}
+
+.nav li a:hover {
+    background-color:#434343;
+    border-color:#f4ff23;
+    transition:all 1s ease-in-out;
+}
+
+.nav li ul {
+    display:none;
+    position:absolute;
+    width: 144px;
+}
+
+.nav li:hover > ul {
+    display:block;
+}
+
+.nav li ul li {
+    position:relative;
+}
+
+.nav li ul li ul {
+    right:-144px;
+    top:0px;
+}
+
+.myaside{
+    visibility: hidden;
+    width: 30%;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: right;
+    font-style: italic;
+    background-color: rgba(211, 211, 211, 0.58); 
+}   
+
+

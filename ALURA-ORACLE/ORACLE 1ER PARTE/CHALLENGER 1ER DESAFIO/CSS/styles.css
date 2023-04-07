@@ -1,0 +1,17 @@
+.cuerpo{
+    background: #f3f5fc;
+}
+.titulo{
+    position: relative;
+    width: 375px;
+    height: 96px;
+    left: 0px;
+    top: 0px;
+}
+
+.titulo__logo{
+    position: absolute;
+    left: 0.01rem;
+    top: 1rem;
+    
+}

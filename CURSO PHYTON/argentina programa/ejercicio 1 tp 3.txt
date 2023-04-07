@@ -1,0 +1,8 @@
+a = 10
+b = 5
+
+c = a
+a = b
+
+print ("el valor de a es: " ,a,)
+print ("el valor de b es: " ,c,)

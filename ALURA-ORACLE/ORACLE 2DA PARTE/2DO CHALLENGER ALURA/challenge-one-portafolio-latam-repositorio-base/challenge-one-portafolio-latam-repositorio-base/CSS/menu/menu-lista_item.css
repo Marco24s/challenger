@@ -1,0 +1,10 @@
+.menu__list__item{
+    margin-right: 1.25rem;
+    font-size: 16px;
+    font-weight: 500;
+    color: #464646;
+}
+
+.menu__list__item__contacto{
+    color: black;
+}

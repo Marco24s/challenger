@@ -1,0 +1,68 @@
+<meta charset="utf-8">
+
+<h2>GRÁFICO DE BARRAS</h2>
+<br>
+
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+    // Creamos nuestra funcion para el rectangulo
+    function dibujarRectangulo (x, y, base, altura, color) {
+        var pantalla = document.querySelector("canvas");
+        var pincel = pantalla.getContext("2d");
+
+        pincel.fillStyle = color;
+        pincel.fillRect(x, y, base, altura);
+        pincel.strokeStyle = "black";
+        pincel.strokeRect(x, y, base, altura);
+    }
+
+    //Creamos nuestra funcion para el texto sobre nuestras barras
+    function escribirTexto (x , y, texto, color, fuente) {
+        var pantalla = document.querySelector("canvas");
+        var pincel = pantalla.getContext("2d");
+
+        pincel.font = fuente;
+        pincel.fillStyle = color;
+        pincel.fillText(texto, x, y);    
+    }
+
+    //Creamos la funcion para las barras
+    function dibujarBarra (x, y, serie, colores, texto) {
+        escribirTexto (x, y - 10, texto, "black", "15px Tahoma");  
+
+        //variable auxiliar
+        var sumaAltura = 0; 
+        for (var i = 0; i <= serie.length; i ++) {
+            var altura = serie[i];  
+            dibujarRectangulo(x, y + sumaAltura, 50, altura, colores[i]);
+            sumaAltura = sumaAltura + altura;  
+        }
+    }
+
+    //Creamos la funcion para las leyendas
+    // 1 Texto para el titulo LEYENDA
+    // 2 Texto de la leyenda
+    function dibujarLeyenda (x, y, leyenda) {
+        escribirTexto (x + 200, y, "LEYENDA:", "black", "25px Tahoma");
+
+        espaciado = 20;
+        for (i = 0; i < leyenda.length; i ++) {
+            escribirTexto (x + 200, y + espaciado, leyenda[i], colores[i], "15px Tahoma");
+            espaciado = espaciado + 20;
+        }
+    }
+
+    //Declaramos las variables serie, leyenda y colores
+    var serie2009 = [6, 47, 41, 3, 3];  
+    var serie2019 = [81, 9, 3, 3, 4]; 
+    var leyenda = ["Chrome", "FireFox", "Explorer", "Safari", "Otros"];  
+    var colores = ["blue","green","yellow", "red","gray"];   
+
+    //Definimos los valores que tendra cada barra a mostrar y la leyenda
+    dibujarBarra (50, 50, serie2009, colores, "2009"); 
+    dibujarBarra (150, 50, serie2019, colores, "2019");
+    dibujarLeyenda (50, 50, leyenda);
+
+</script>

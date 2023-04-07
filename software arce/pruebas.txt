@@ -1,0 +1,33 @@
+!DOCTYPE html
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Probando hover y :after</title>
+  <style>
+    li:hover {
+      background-color: aquamarine;
+      padding: 20px;
+    }
+    li:hover::after {
+      position: relative;
+      left: 20px;
+      top: 5px;
+    }
+    li.img1:hover::after {
+      content: url(http://lorempixel.com/32/32/sports);
+    }
+    li.img2:hover::after {
+      content: url(http://lorempixel.com/30/30/nature);
+    }
+  </style>
+</head>
+<body>
+  <ol>
+    <li class="img1">Probando 1</li>
+  </ol>
+  <ol>
+    <li class="img2">Probando 2</li>
+  </ol>
+</body>
+</html>

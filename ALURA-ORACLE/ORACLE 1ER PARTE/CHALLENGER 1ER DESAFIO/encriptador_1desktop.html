@@ -1,0 +1,47 @@
+<!DOCTYPE html >
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+        <title>Encriptador - 1 Desktop</title>
+        <link rel="stylesheet" href="CSS/reset.css">
+        <link rel="stylesheet" href="CSS/styles.css"> 
+        <link rel="stylesheet" href="CSS/mensajes/mensaje.css">
+        <link rel="stylesheet" href="CSS/mensajes/mensaje-texto.css"> 
+        <link rel="stylesheet" href="CSS/mensajes/mensaje-informacion.css">
+        <link rel="stylesheet" href="CSS/mensajes/mensaje-botones.css">
+        <link rel="stylesheet" href="CSS/mensajes/mensaje-btnencriptar.css">
+        <link rel="stylesheet" href="CSS/mensajes/mensaje-btndesencriptar.css"> 
+        <link rel="stylesheet" href="CSS/decodificador/decodificador.css"> 
+        <link rel="stylesheet" href="CSS/decodificador/decodificador-texto.css"> 
+        <link rel="stylesheet" href="CSS/decodificador/decodificador-copiar.css"> 
+    </head>
+    <body class="cuerpo">
+        <header class="titulo">
+            <img class="titulo__logo" src="C:\Users\Cinthia\Desktop\CURSOS DE PROGRAMACION\ALURA-ORACLE\ORACLE 1ER PARTE\imagenes\Logo.png" alt="logo de alura">
+        </header>
+        <main>
+            <section class="mensaje">
+                <textarea class="mensaje__texto" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+                <div>
+                    <h6 class="mensaje__informacion">Solo letras minusculas y sin acentos</h6>
+                </div>
+                <div class="mensaje__botones">
+                    <button class="mensaje__btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                    <button class="mensaje__btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                </div>
+            <div class="decodificador">
+                <textarea class="decodificador__texto" cols="20" rows="10" placeholder="ningun mensaje fue encontrado"></textarea>
+                <div>
+                 <button class="decodificador__copiar">Copiar</button>
+                </div>
+            </div>
+            </section>
+        </main>
+    <script src="script.js"></script>
+    </body>
+</html>

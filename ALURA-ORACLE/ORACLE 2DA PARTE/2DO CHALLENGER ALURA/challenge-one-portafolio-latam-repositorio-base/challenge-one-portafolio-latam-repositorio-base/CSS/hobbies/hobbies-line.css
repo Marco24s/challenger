@@ -1,0 +1,8 @@
+.hobbies__line{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    
+}
